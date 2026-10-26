@@ -15,7 +15,7 @@ interface GalleryItem {
 const galleryItems: GalleryItem[] = [
   {
     id: 'tata-2823',
-    title: 'TATA 2823 Petroleum Road Tanker (MH-04 L45827)',
+    title: 'TATA 2823 Multi-Axle Petroleum Road Tanker',
     category: 'finished',
     categoryLabel: 'Finished Tankers',
     image: '/images/hero-tanker-tata2823.jpg',
@@ -114,7 +114,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: '20kl-petro-tanker',
-    title: '20 KL Petroleum Transport Tanker (MH-04 LY6214)',
+    title: '20 KL Commercial HSD Petroleum Tanker',
     category: 'finished',
     categoryLabel: 'Finished Tankers',
     image: '/images/20kl-hsd-petroleum-tanker.jpg',

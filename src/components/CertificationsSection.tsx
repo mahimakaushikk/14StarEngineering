@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShieldCheck, Download, ExternalLink, X, CheckCircle2, ZoomIn } from 'lucide-react';
+import { ShieldCheck, Download, ExternalLink, X, CheckCircle2, ZoomIn, FileText, FileCheck } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BUSINESS_INFO } from '../config/businessInfo';
 
@@ -170,6 +170,106 @@ export const CertificationsSection: React.FC = () => {
               </div>
             </div>
           </motion.div>
+        </div>
+
+        {/* Statutory Licences & Government Authorisations */}
+        <div className="statutory-licences-section">
+          <div className="statutory-header text-center">
+            <span className="section-tag">Statutory Approvals & Compliance</span>
+            <h3 className="statutory-title">
+              Statutory Licences & Government Authorisations
+            </h3>
+            <p className="statutory-lead">
+              FOURTEEN STAR ENGINEERING operates under official regulatory approvals and provides all mandatory vehicle modification and carriage certificates with every fabricated road tanker.
+            </p>
+          </div>
+
+          {/* Featured Highlight: PESO Approved Explosive Licence */}
+          <motion.div
+            className="peso-highlight-card"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-40px' }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="peso-highlight-left">
+              <div className="peso-tag-row">
+                <span className="peso-badge">[PESO APPROVED]</span>
+                <span className="peso-dept-tag">Govt. of India Statutory Authority</span>
+              </div>
+              <h4 className="peso-highlight-title">Explosive Licence</h4>
+              <p className="peso-highlight-desc">
+                Statutory authorization from the <strong>Petroleum and Explosives Safety Organization (PESO)</strong>, Ministry of Commerce and Industry, Government of India. Authorizes the manufacturing, carriage, and hazardous cargo safety compliance of road tankers carrying Class A and Class B petroleum products across Indian highways.
+              </p>
+              <div className="peso-specs-row">
+                <div className="peso-spec-chip">
+                  <CheckCircle2 size={15} />
+                  <span>Petroleum Carriage Compliant</span>
+                </div>
+                <div className="peso-spec-chip">
+                  <CheckCircle2 size={15} />
+                  <span>Hazardous Cargo Safety Certified</span>
+                </div>
+                <div className="peso-spec-chip">
+                  <CheckCircle2 size={15} />
+                  <span>Interstate Highway Transport Authorized</span>
+                </div>
+              </div>
+            </div>
+            <div className="peso-highlight-right">
+              <div className="peso-seal-box">
+                <div className="peso-seal-circle">
+                  <ShieldCheck size={32} />
+                  <span className="peso-seal-text">PESO</span>
+                </div>
+                <div className="peso-seal-label">Statutory Petroleum Standard</div>
+                <div className="peso-seal-status">Active & Approved</div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Statutory Licences & Commercial Documents Grid */}
+          <div className="statutory-grid">
+            {BUSINESS_INFO.licences.filter(l => !l.isPesoApproved).map((licence, idx) => (
+              <motion.div
+                key={licence.id}
+                className="statutory-card"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-30px' }}
+                transition={{ duration: 0.4, delay: idx * 0.08 }}
+              >
+                <div className="statutory-card-header">
+                  <div className="statutory-card-icon">
+                    <FileText size={20} />
+                  </div>
+                  <div className="statutory-card-badge">{licence.badge}</div>
+                </div>
+                <h4 className="statutory-card-title">{licence.title}</h4>
+                <div className="statutory-card-scope">{licence.scope}</div>
+                <p className="statutory-card-desc">{licence.description}</p>
+                <div className="statutory-card-footer">
+                  <span className="statutory-card-status">
+                    <CheckCircle2 size={14} />
+                    <span>{licence.status}</span>
+                  </span>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Handover Documentation Notice */}
+          <div className="statutory-dispatch-banner">
+            <div className="dispatch-banner-icon">
+              <FileCheck size={24} />
+            </div>
+            <div className="dispatch-banner-text">
+              <strong>Mandatory Handover Documentation Included With Every Tanker</strong>
+              <p>
+                Every fabricated road tanker is dispatched complete with body builder Form 17, Form 22A/22B endorsement certificates, hydrostatic cell pressure testing reports, and calibration certificates for immediate RTO passing and oil marketing company registration.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 

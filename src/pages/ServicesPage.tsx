@@ -25,8 +25,9 @@ const detailedServices = [
     features: [
       'Precision hydraulic dished ends for maximum pressure absorption',
       'Continuous submerged arc / MIG root-welded shell joints',
+      'PESO Approved carriage compliance with full hydrostatic pressure testing',
       'Anti-skid walkway grid with ergonomic rear access ladder',
-      'Calibrated bottom discharge manifold box with lockable steel doors',
+      'Complete Form 17 and Form 22A/22B documentation for immediate RTO registration',
     ],
   },
   {
@@ -71,10 +72,11 @@ const detailedServices = [
       { label: 'Axle Balance', val: 'Engineered Dynamic CG Calibration Across Cells' },
     ],
     features: [
+      'PESO Approved hazardous petroleum carriage & safety compliance',
       'Precise volumetric calibration per compartment cell',
       'Independent emergency foot valve controls per cell',
       'Isolated side discharge manifold with clear compartment labels',
-      'Balanced axle weight distribution even when partially unloaded',
+      'Complete Form 17 and Form 22A/22B statutory vehicle documentation package',
     ],
   },
   {

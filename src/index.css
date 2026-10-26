@@ -2970,6 +2970,366 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
+   STATUTORY LICENCES & REGULATORY COMPLIANCE SECTION
+   ========================================================================== */
+.statutory-licences-section {
+  margin-top: 56px;
+  padding-top: 48px;
+  border-top: 1px solid var(--color-border-light);
+}
+
+.statutory-header {
+  margin-bottom: 32px;
+}
+
+.statutory-title {
+  color: var(--color-forest);
+  font-size: 1.45rem;
+  font-weight: 900;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 640px) {
+  .statutory-title {
+    font-size: 1.75rem;
+  }
+}
+
+.statutory-lead {
+  font-size: 0.9375rem;
+  color: #4A5650;
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Featured PESO Approved Card */
+.peso-highlight-card {
+  background: linear-gradient(135deg, #1B2E27 0%, #243A32 60%, #1A2823 100%);
+  border: 2px solid var(--color-copper);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: center;
+  box-shadow: 0 12px 30px rgba(27, 46, 39, 0.25);
+  margin-bottom: 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.peso-highlight-card::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(183, 122, 64, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .peso-highlight-card {
+    grid-template-columns: 1fr auto;
+    padding: 32px;
+    gap: 36px;
+  }
+}
+
+.peso-highlight-left {
+  position: relative;
+  z-index: 1;
+}
+
+.peso-tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.peso-badge {
+  display: inline-flex;
+  align-items: center;
+  background: #B77A40;
+  color: #FFFFFF;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.8125rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(183, 122, 64, 0.4);
+}
+
+.peso-dept-tag {
+  color: #D3DDD7;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.peso-highlight-title {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
+@media (min-width: 640px) {
+  .peso-highlight-title {
+    font-size: 1.85rem;
+  }
+}
+
+.peso-highlight-desc {
+  color: #D8DFDB;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 680px;
+}
+
+.peso-highlight-desc strong {
+  color: #FFFFFF;
+}
+
+.peso-specs-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.peso-spec-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #F1EDE4;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.peso-spec-chip svg {
+  color: #52B788;
+  flex-shrink: 0;
+}
+
+.peso-highlight-right {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.peso-seal-box {
+  background: rgba(15, 25, 20, 0.6);
+  border: 1px solid rgba(183, 122, 64, 0.5);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  text-align: center;
+  min-width: 170px;
+}
+
+.peso-seal-circle {
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 10px;
+  background: linear-gradient(135deg, #B77A40 0%, #8C5929 100%);
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+.peso-seal-circle svg {
+  margin-bottom: 2px;
+}
+
+.peso-seal-text {
+  font-size: 0.625rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.peso-seal-label {
+  font-size: 0.71875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #CBD5CF;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+.peso-seal-status {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #52B788;
+  background: rgba(82, 183, 136, 0.15);
+  border: 1px solid rgba(82, 183, 136, 0.3);
+  padding: 3px 8px;
+  border-radius: 9999px;
+  display: inline-block;
+}
+
+/* Statutory Licences Grid */
+.statutory-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 640px) {
+  .statutory-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .statutory-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.statutory-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(36, 58, 50, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.statutory-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(36, 58, 50, 0.08);
+  border-color: var(--color-copper);
+}
+
+.statutory-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.statutory-card-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--color-sandstone-light);
+  color: var(--color-forest);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statutory-card-badge {
+  font-size: 0.6875rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: #FAF8F5;
+  color: var(--color-copper);
+  border: 1px solid rgba(183, 122, 64, 0.3);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.statutory-card-title {
+  color: var(--color-forest);
+  font-size: 1.125rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.statutory-card-scope {
+  font-size: 0.78125rem;
+  font-weight: 700;
+  color: #63736A;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.statutory-card-desc {
+  font-size: 0.8125rem;
+  color: #4A5650;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.statutory-card-footer {
+  padding-top: 12px;
+  border-top: 1px solid #F0ECE4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.statutory-card-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.71875rem;
+  font-weight: 700;
+  color: #2E7D32;
+  background: #E8F5E9;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+/* Handover Dispatch Banner */
+.statutory-dispatch-banner {
+  background: var(--color-white);
+  border: 1px solid var(--color-border-light);
+  border-left: 4px solid var(--color-forest);
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.dispatch-banner-icon {
+  color: var(--color-forest);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.dispatch-banner-text strong {
+  display: block;
+  font-size: 0.9375rem;
+  color: var(--color-forest);
+  margin-bottom: 4px;
+}
+
+.dispatch-banner-text p {
+  font-size: 0.84375rem;
+  color: #55625B;
+  margin: 0;
+  line-height: 1.5;
+}
+
+
+/* ==========================================================================
    MANUFACTURING GALLERY SECTION
    ========================================================================== */
 .gallery-section {
