@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Wrench, Shield, UserCheck, MapPin, Gauge } from 'lucide-react';
+import { ArrowRight, Wrench, Shield, MapPin, Gauge } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { CertificationsSection } from '../components/CertificationsSection';
 import { PageBanner } from '../components/PageBanner';
 import { Statistics } from '../components/Statistics';
 import { BUSINESS_INFO } from '../config/businessInfo';
@@ -47,19 +48,24 @@ export const AboutPage: React.FC = () => {
                 Our facility is situated in a strategic industrial corridor in Thane, enabling efficient vehicle chassis intake, precision fabrication, fitment of statutory safety valves, and fast vehicle delivery for transporters operating across Maharashtra, Gujarat, and nationwide transport routes.
               </p>
 
-              {/* Leadership Spotlight */}
-              <div className="about-leader-badge" style={{ marginTop: '24px', marginBottom: '24px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
-                  <UserCheck size={18} color="var(--color-copper)" />
-                  <div className="leader-label" style={{ marginBottom: 0 }}>Proprietor & Engineering Lead</div>
+              {/* Leadership Spotlight with Owner Portrait */}
+              <div className="about-owner-card" style={{ marginTop: '28px', marginBottom: '28px' }}>
+                <div className="about-owner-avatar-wrap">
+                  <img
+                    src="/images/owner-talib-naqvi.jpg"
+                    alt="Talib Naqvi (Ali Ahsan Naqvi) - Proprietor & Engineering Lead"
+                    className="about-owner-avatar"
+                    loading="lazy"
+                  />
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
-                  <span className="leader-name">{BUSINESS_INFO.contactPerson}</span>
-                  <span className="leader-qual">{BUSINESS_INFO.qualification}</span>
+                <div className="about-owner-details">
+                  <div className="leader-label">Proprietor & Engineering Lead</div>
+                  <div className="leader-name">{BUSINESS_INFO.contactPerson}</div>
+                  <div className="leader-qual">{BUSINESS_INFO.qualification} (Bachelor of Engineering in Mechanical Engineering)</div>
+                  <p className="about-owner-bio" style={{ marginTop: '8px' }}>
+                    Personally directs shell plate thickness verification, dished end forming, chassis axle load balancing, weld quality control, and certified hydrostatic pressure testing before client dispatch.
+                  </p>
                 </div>
-                <p style={{ fontSize: '0.8125rem', color: '#55625B', marginTop: '8px', marginBottom: 0, lineHeight: 1.5 }}>
-                  Holding a Bachelor of Engineering in Mechanical Engineering (B.E. Mechanical), Talib Naqvi personally directs plate thickness verification, chassis load distribution, dished end alignment, and certified welding procedures.
-                </p>
               </div>
 
               {/* Core Principles */}
@@ -111,8 +117,8 @@ export const AboutPage: React.FC = () => {
               transition={{ duration: 0.6 }}
             >
               <img
-                src="/images/workshop-welding.jpg"
-                alt="Certified welder performing MIG seam welding on a steel road tanker shell in workshop"
+                src="/images/tanker-shell-fabrication.jpg"
+                alt="Mild steel road tanker elliptical shell fabrication with dished ends in Thane workshop"
                 className="about-media-image"
                 loading="lazy"
               />
@@ -155,6 +161,9 @@ export const AboutPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Dedicated Certifications Section */}
+      <CertificationsSection />
 
       {/* Statistics Strip */}
       <Statistics />

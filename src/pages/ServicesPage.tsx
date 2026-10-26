@@ -11,7 +11,7 @@ const detailedServices = [
     category: 'Core Road Transport',
     specCode: 'SPEC-MS-PETRO',
     type: 'in-house' as const,
-    image: '/images/hero-tanker.jpg',
+    image: '/images/finished-ashok-leyland-tanker.jpg',
     lead: 'Custom-fabricated mild steel road tankers built specifically for the transportation of Motor Spirit (MS) and High-Speed Diesel (HSD).',
     description:
       'Engineered to withstand continuous long-haul highway stresses and liquid sloshing dynamics. Manufactured using certified structural steel plates, precision cold-formed dished ends, and heavy-duty internal anti-surge baffles. Every tank is designed to distribute axle loads evenly across customer vehicle chassis.',
@@ -35,7 +35,7 @@ const detailedServices = [
     category: 'Chemical & Specialized Liquids',
     specCode: 'SPEC-SS-SUBCON',
     type: 'subcontract' as const,
-    image: '/images/stainless-tanker.jpg',
+    image: '/images/finished-white-road-tanker.jpg',
     lead: 'Specialized stainless steel tanker fabrication solutions executed on a subcontract basis with vetted technical fabrication specialists.',
     description:
       'Built for the carriage of industrial chemicals, acids, edible oils, and corrosive or food-grade liquid commodities. 14 Star Engineering coordinates technical specifications, chassis dimensions, and engineering oversight while manufacturing is executed via vetted subcontract fabrication partners.',
@@ -59,7 +59,7 @@ const detailedServices = [
     category: 'Multi-Product Distribution',
     specCode: 'SPEC-MULTI-COMP',
     type: 'in-house' as const,
-    image: '/images/compartment-tanker.jpg',
+    image: '/images/hp-24kl-multi-compartment.jpg',
     lead: 'Engineered road tankers partitioned into independent, calibrated cells for transporting different petroleum products simultaneously.',
     description:
       'Transporters can carry petrol, diesel, and premium fuels in a single trip with absolute zero inter-compartment contamination. Engineered with heavy-duty single or double bulkheads, dedicated dip pipes, independent manhole covers, and separate discharge lines for each cell.',
@@ -83,7 +83,7 @@ const detailedServices = [
     category: 'Safety & Highway Compliance',
     specCode: 'SPEC-SAFETY-VALVES',
     type: 'in-house' as const,
-    image: '/images/tanker-fittings.jpg',
+    image: '/images/tanker-rear-ladder-catwalk.jpg',
     lead: 'Supply, assembly, and integration of essential petroleum road tanker safety fittings and statutory fluid hardware.',
     description:
       'We supply and fit high-grade brass, aluminum, and stainless steel hardware required for road tanker safety and fluid containment. All hardware is selected to prevent accidental product spills, static hazards, and vapor emissions on highways.',
@@ -107,7 +107,7 @@ const detailedServices = [
     category: 'Maintenance & Overhaul',
     specCode: 'SPEC-OVERHAUL-PU',
     type: 'in-house' as const,
-    image: '/images/tanker-repair.jpg',
+    image: '/images/chassis-mounting-overhaul.jpg',
     lead: 'Turnaround maintenance, leak rectification, weld re-strengthening, and industrial polyurethane repainting with fleet branding.',
     description:
       'When road tankers face highway wear, plate thinning, or body cracks, our workshop provides fast-turnaround refurbishment to minimize transporter fleet downtime. We perform tank cleaning, dye-penetrant weld testing, structural reinforcing, and multi-coat protective painting.',
@@ -185,7 +185,7 @@ export const ServicesPage: React.FC = () => {
                         }}
                         loading="lazy"
                         onError={(e) => {
-                          e.currentTarget.src = '/images/hero-tanker.jpg';
+                          e.currentTarget.src = '/images/hero-tanker-tata2823.jpg';
                         }}
                       />
                       <span

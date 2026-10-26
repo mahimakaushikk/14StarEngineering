@@ -30,12 +30,23 @@ export const About: React.FC = () => {
               Under the technical leadership of Talib Naqvi (Ali Ahsan Naqvi), holding a Bachelor of Engineering in Mechanical Engineering (B.E. Mechanical), our manufacturing focuses on structural integrity, precision alignment, weld longevity, and leak-proof tanker vessel fabrication.
             </p>
 
-            {/* Verified Leadership Box */}
-            <div className="about-leader-badge">
-              <div className="leader-label">Technical Leadership</div>
-              <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
-                <span className="leader-name">{BUSINESS_INFO.contactPerson}</span>
-                <span className="leader-qual">{BUSINESS_INFO.qualification}</span>
+            {/* Verified Leadership Box with Owner Portrait */}
+            <div className="about-owner-card">
+              <div className="about-owner-avatar-wrap">
+                <img
+                  src="/images/owner-talib-naqvi.jpg"
+                  alt="Talib Naqvi (Ali Ahsan Naqvi) - Proprietor & Technical Lead, B.E. Mechanical"
+                  className="about-owner-avatar"
+                  loading="lazy"
+                />
+              </div>
+              <div className="about-owner-details">
+                <div className="leader-label">Proprietor & Engineering Lead</div>
+                <div className="leader-name">{BUSINESS_INFO.contactPerson}</div>
+                <div className="leader-qual">{BUSINESS_INFO.qualification} (Bachelor of Engineering)</div>
+                <p className="about-owner-bio">
+                  Personally directs tanker shell design, chassis weight balancing, dished end alignment, and certified hydrostatic testing.
+                </p>
               </div>
             </div>
 
@@ -77,7 +88,7 @@ export const About: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Right Column: Authentic Workshop Photography */}
+          {/* Right Column: Authentic Workshop Shell Fabrication */}
           <motion.div
             className="about-media"
             initial={{ opacity: 0, x: 30 }}
@@ -85,14 +96,16 @@ export const About: React.FC = () => {
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           >
-            <img
-              src="/images/workshop-welding.jpg"
-              alt="Certified welder performing MIG seam welding on a steel road tanker shell in workshop"
-              className="about-media-image"
-              loading="lazy"
-            />
-            <div className="about-media-tag">
-              <strong>{BUSINESS_INFO.brandName}</strong> — {BUSINESS_INFO.factory.post}, {BUSINESS_INFO.factory.cityPin}
+            <div className="about-media-frame">
+              <img
+                src="/images/tanker-shell-fabrication.jpg"
+                alt="Mild steel road tanker elliptical shell fabrication with dished ends in Thane workshop"
+                className="about-media-image"
+                loading="lazy"
+              />
+              <div className="about-media-tag">
+                <strong>{BUSINESS_INFO.brandName}</strong> — Fabrication Bay, Bhandarli, Thane
+              </div>
             </div>
           </motion.div>
         </div>

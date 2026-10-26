@@ -22,7 +22,7 @@ const serviceItems = [
       'Calibrated discharge box & emergency foot valve provision',
     ],
     cta: 'Enquire for Petroleum Tankers',
-    image: '/images/hero-tanker.jpg',
+    image: '/images/finished-ashok-leyland-tanker.jpg',
   },
   {
     id: 'stainless-steel-tankers',
@@ -39,7 +39,7 @@ const serviceItems = [
       'Clear project oversight & engineering coordination by 14 Star',
     ],
     cta: 'Enquire for Stainless Tankers',
-    image: '/images/stainless-tanker.jpg',
+    image: '/images/finished-white-road-tanker.jpg',
   },
   {
     id: 'compartment-tankers',
@@ -56,7 +56,7 @@ const serviceItems = [
       'Even axle weight distribution across loaded compartments',
     ],
     cta: 'Enquire for Compartment Tankers',
-    image: '/images/compartment-tanker.jpg',
+    image: '/images/hp-24kl-multi-compartment.jpg',
   },
   {
     id: 'tanker-fittings',
@@ -73,7 +73,7 @@ const serviceItems = [
       'Side underrun protection beams & rear heavy-duty impact bumpers',
     ],
     cta: 'Enquire for Fittings & Equipment',
-    image: '/images/tanker-fittings.jpg',
+    image: '/images/tanker-rear-ladder-catwalk.jpg',
   },
   {
     id: 'tanker-repair',
@@ -90,7 +90,7 @@ const serviceItems = [
       'High-durability polyurethane topcoat & fleet branding livery',
     ],
     cta: 'Enquire for Repair & Repainting',
-    image: '/images/tanker-repair.jpg',
+    image: '/images/chassis-mounting-overhaul.jpg',
   },
 ];
 
@@ -152,7 +152,7 @@ export const ProductsServices: React.FC<ProductsServicesProps> = ({ onSelectServ
                     loading="lazy"
                     onError={(e) => {
                       // Bulletproof fallback so broken image icons never appear
-                      e.currentTarget.src = '/images/hero-tanker.jpg';
+                      e.currentTarget.src = '/images/hero-tanker-tata2823.jpg';
                     }}
                   />
                   <span

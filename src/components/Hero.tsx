@@ -12,10 +12,10 @@ export const Hero: React.FC = () => {
 
   return (
     <section id="home" className="hero-section" aria-labelledby="hero-main-title">
-      {/* High-Impact Realistic Tanker Background */}
+      {/* Authentic Client Tanker Workshop Photography */}
       <img
-        src="/images/hero-tanker.jpg"
-        alt="Commercial heavy petroleum road tanker truck at engineering facility"
+        src="/images/hero-tanker-tata2823.jpg"
+        alt="TATA 2823 commercial heavy petroleum road tanker under fabrication at 14 Star Engineering workshop facility"
         className="hero-bg-overlay"
         loading="eager"
         fetchPriority="high"
@@ -39,7 +39,7 @@ export const Hero: React.FC = () => {
             transition={{ delay: 0.2, duration: 0.5 }}
           >
             <ShieldCheck size={15} color="#B77A40" aria-hidden="true" />
-            <span>Heavy Industrial Tanker Body Builders • Thane</span>
+            <span>ISO 9001:2015 Certified • B.E. Mechanical Leadership • Thane</span>
           </motion.div>
 
           {/* Main Headline */}

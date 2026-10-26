@@ -177,6 +177,7 @@ export const ContactFooter: React.FC = () => {
                 <li><Link to="/about">About 14 Star</Link></li>
                 <li><Link to="/services">Tankers & Services</Link></li>
                 <li><Link to="/clients">Clients & Partners</Link></li>
+                <li><a href="/docs/iso-9001-certificate.pdf" target="_blank" rel="noopener noreferrer">ISO 9001:2015 Certificate (PDF)</a></li>
                 <li><Link to="/contact">Contact Us</Link></li>
               </ul>
             </div>

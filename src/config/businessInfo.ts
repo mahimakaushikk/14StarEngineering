@@ -31,6 +31,24 @@ export const BUSINESS_INFO = {
   reportedDeliveries: '250+',
   reportedDeliveriesLabel: 'Tankers Delivered',
 
+  // Verified ISO 9001:2015 Certification
+  isoCertification: {
+    standard: 'ISO 9001:2015',
+    title: 'Quality Management Systems (QMS)',
+    registeredEntity: 'FOURTEEN STAR ENGINEERING',
+    certificateNo: 'IN/36518505/5698',
+    scope: 'MANUFACTURER AND FABRICATION OF PETROLEUM TANK AND STORAGE M. S TANK, S. S TANK.',
+    issueDate: '03/06/2025',
+    expiryDate: '02/06/2028',
+    surveillance1: '03/05/2026',
+    surveillance2: '03/05/2027',
+    certificationBody: 'ICV ASSESSMENTS PVT. LTD.',
+    accreditation: 'IAF Multilateral Recognition Arrangement & EGAC Accredited (CAB #011907A)',
+    certificatePdfUrl: '/docs/iso-9001-certificate.pdf',
+    certificateImageUrl: '/images/iso-9001-certificate.jpg',
+    certificateHighResUrl: '/images/iso-9001-certificate-page-1.jpg',
+  },
+
   // Factory Location & Physical Address
   factory: {
     name: 'Jay Sai Warehouse',
