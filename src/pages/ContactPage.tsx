@@ -30,83 +30,95 @@ export const ContactPage: React.FC = () => {
           <div className="contact-cards-grid">
             {/* Engineer Profile Card */}
             <div className="contact-card" style={{ borderLeft: '4px solid var(--color-copper)' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' }}>
                 <UserCheck size={20} color="var(--color-copper)" />
-                <h4 style={{ fontSize: '0.8125rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-sage)' }}>
+                <h4 style={{ fontSize: '0.8125rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-sage)', margin: 0 }}>
                   Proprietor & Mechanical Engineer
                 </h4>
               </div>
-              <div style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--color-forest)', marginBottom: '4px' }}>
+              <div style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--color-forest)', marginBottom: '8px' }}>
                 {BUSINESS_INFO.contactPerson}
               </div>
-              <div style={{ fontSize: '0.875rem', fontWeight: 700, color: 'var(--color-copper)' }}>
-                {BUSINESS_INFO.qualification}
+              <div className="contact-card-footer-box">
+                <div className="contact-qualification-pill">{BUSINESS_INFO.qualification}</div>
+                <div className="contact-card-sub-micro">Heavy Tanker Fabrication Leadership</div>
               </div>
             </div>
 
             {/* Direct Calling Lines */}
             <div className="contact-card" style={{ borderLeft: '4px solid var(--color-forest)' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' }}>
                 <Phone size={20} color="var(--color-forest)" />
-                <h4 style={{ fontSize: '0.8125rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-sage)' }}>
+                <h4 style={{ fontSize: '0.8125rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-sage)', margin: 0 }}>
                   Direct Phone Lines
                 </h4>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
                 <a
                   href={`tel:${BUSINESS_INFO.contact.phone1Raw}`}
-                  style={{ fontSize: '1.1rem', fontWeight: 800, color: 'var(--color-forest)' }}
+                  style={{ fontSize: '1.0625rem', fontWeight: 800, color: 'var(--color-forest)' }}
                 >
                   {BUSINESS_INFO.contact.phone1}
                 </a>
                 <a
                   href={`tel:${BUSINESS_INFO.contact.phone2Raw}`}
-                  style={{ fontSize: '1.1rem', fontWeight: 800, color: 'var(--color-forest)' }}
+                  style={{ fontSize: '1.0625rem', fontWeight: 800, color: 'var(--color-forest)' }}
                 >
                   {BUSINESS_INFO.contact.phone2}
                 </a>
               </div>
-            </div>
-
-            {/* Factory Address */}
-            <div className="contact-card" style={{ borderLeft: '4px solid var(--color-copper)' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
-                <MapPin size={20} color="var(--color-copper)" />
-                <h4 style={{ fontSize: '0.8125rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-sage)' }}>
-                  Factory & Workshop
-                </h4>
+              <div className="contact-card-footer-box">
+                <div className="contact-card-sub">Mon to Sat: 9:00 AM – 7:30 PM</div>
+                <div className="contact-card-sub-micro">Direct Calling & WhatsApp Support</div>
               </div>
-              <p style={{ fontSize: '0.8125rem', color: '#55625B', margin: 0, lineHeight: 1.45, marginBottom: '10px' }}>
-                {BUSINESS_INFO.factory.fullAddress}
-              </p>
-              <a
-                href={BUSINESS_INFO.factory.directionsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', fontSize: '0.75rem', fontWeight: 700, color: 'var(--color-copper)' }}
-              >
-                <span>Get Directions in Google Maps</span>
-                <ExternalLink size={12} />
-              </a>
             </div>
 
             {/* Email Enquiries Card */}
             <div className="contact-card" style={{ borderLeft: '4px solid var(--color-forest)' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' }}>
                 <Mail size={20} color="var(--color-forest)" />
-                <h4 style={{ fontSize: '0.8125rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-sage)' }}>
+                <h4 style={{ fontSize: '0.8125rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-sage)', margin: 0 }}>
                   Email Enquiries
                 </h4>
               </div>
               <a
                 href={`mailto:${BUSINESS_INFO.contact.email}`}
-                style={{ fontSize: '0.9375rem', fontWeight: 800, color: 'var(--color-forest)', wordBreak: 'break-all' }}
+                className="contact-card-value email-value"
               >
                 {BUSINESS_INFO.contact.email}
               </a>
-              <p style={{ fontSize: '0.75rem', color: '#55625B', marginTop: '6px', marginBottom: 0 }}>
-                Direct quotation requests & technical drawings
+              <div className="contact-card-footer-box">
+                <div className="contact-card-sub">Commercial Quotations & Invoicing</div>
+                <div className="contact-card-sub-micro">Direct drawings & specifications review</div>
+              </div>
+            </div>
+
+            {/* Factory Address */}
+            <div className="contact-card" style={{ borderLeft: '4px solid var(--color-copper)' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' }}>
+                <MapPin size={20} color="var(--color-copper)" />
+                <h4 style={{ fontSize: '0.8125rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-sage)', margin: 0 }}>
+                  Factory & Workshop
+                </h4>
+              </div>
+              <p style={{ fontSize: '0.84375rem', color: '#55625B', margin: 0, lineHeight: 1.45, fontWeight: 600 }}>
+                {BUSINESS_INFO.factory.name}, Bhandarli, Thane 400 612
               </p>
+              <div className="contact-card-footer-box">
+                <a
+                  href={BUSINESS_INFO.factory.directionsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-outline-forest btn-sm"
+                  style={{ width: '100%', fontSize: '0.75rem', padding: '6px 10px' }}
+                >
+                  <span>Get Factory Directions</span>
+                  <ExternalLink size={12} />
+                </a>
+                <div className="contact-card-sub-micro" style={{ marginTop: '2px' }}>
+                  *Bhandarli, Thane industrial area
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -26,7 +26,7 @@ export const Header: React.FC = () => {
       {/* Primary Navigation Bar */}
       <div className="container header-nav-inner">
         <Link to="/" aria-label="14 Star Engineering Home" style={{ display: 'inline-block' }}>
-          <Logo variant="light" size="md" />
+          <Logo variant="light" size="lg" />
         </Link>
 
         {/* Desktop Navigation Links */}

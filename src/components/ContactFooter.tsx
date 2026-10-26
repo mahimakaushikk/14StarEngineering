@@ -55,8 +55,9 @@ export const ContactFooter: React.FC = () => {
               </div>
               <div className="contact-card-label">Owner & Mechanical Engineer</div>
               <div className="contact-card-value">{BUSINESS_INFO.contactPerson}</div>
-              <div className="contact-card-sub" style={{ fontWeight: 700, color: 'var(--color-copper)' }}>
-                {BUSINESS_INFO.qualification}
+              <div className="contact-card-footer-box">
+                <div className="contact-qualification-pill">{BUSINESS_INFO.qualification}</div>
+                <div className="contact-card-sub-micro">Tanker Manufacturing & Quality Lead</div>
               </div>
             </motion.div>
 
@@ -77,7 +78,7 @@ export const ContactFooter: React.FC = () => {
                 <a
                   href={`tel:${BUSINESS_INFO.contact.phone1Raw}`}
                   className="contact-card-value"
-                  style={{ fontSize: '1rem' }}
+                  style={{ fontSize: '1rem', margin: 0 }}
                   aria-label={`Call primary phone ${BUSINESS_INFO.contact.phone1}`}
                 >
                   {BUSINESS_INFO.contact.phone1}
@@ -85,13 +86,16 @@ export const ContactFooter: React.FC = () => {
                 <a
                   href={`tel:${BUSINESS_INFO.contact.phone2Raw}`}
                   className="contact-card-value"
-                  style={{ fontSize: '1rem' }}
+                  style={{ fontSize: '1rem', margin: 0 }}
                   aria-label={`Call secondary phone ${BUSINESS_INFO.contact.phone2}`}
                 >
                   {BUSINESS_INFO.contact.phone2}
                 </a>
               </div>
-              <div className="contact-card-sub">Mon to Sat: 9:00 AM – 7:30 PM</div>
+              <div className="contact-card-footer-box">
+                <div className="contact-card-sub">Mon to Sat: 9:00 AM – 7:30 PM</div>
+                <div className="contact-card-sub-micro">Direct Call or WhatsApp Consultation</div>
+              </div>
             </motion.div>
 
             {/* Official Email Card */}
@@ -109,13 +113,15 @@ export const ContactFooter: React.FC = () => {
               <div className="contact-card-label">Official Email</div>
               <a
                 href={`mailto:${BUSINESS_INFO.contact.email}`}
-                className="contact-card-value"
-                style={{ fontSize: '0.9375rem', wordBreak: 'break-all' }}
+                className="contact-card-value email-value"
                 aria-label={`Send email to ${BUSINESS_INFO.contact.email}`}
               >
                 {BUSINESS_INFO.contact.email}
               </a>
-              <div className="contact-card-sub">Commercial Quotations & Invoicing</div>
+              <div className="contact-card-footer-box">
+                <div className="contact-card-sub">Commercial Quotations & Invoicing</div>
+                <div className="contact-card-sub-micro">Direct Engineering Response within 24 Hrs</div>
+              </div>
             </motion.div>
 
             {/* Factory Address & Location Card */}
@@ -131,10 +137,10 @@ export const ContactFooter: React.FC = () => {
                 <MapPin size={22} aria-hidden="true" />
               </div>
               <div className="contact-card-label">Factory & Workshop Address</div>
-              <div className="contact-card-value" style={{ fontSize: '0.875rem', lineHeight: '1.4' }}>
+              <div className="contact-card-value" style={{ fontSize: '0.84375rem', lineHeight: '1.45', fontWeight: 600 }}>
                 {BUSINESS_INFO.factory.name}, {BUSINESS_INFO.factory.street}, {BUSINESS_INFO.factory.post}, {BUSINESS_INFO.factory.cityPin}
               </div>
-              <div style={{ marginTop: 'auto', paddingTop: '10px' }}>
+              <div className="contact-card-footer-box">
                 <a
                   href={BUSINESS_INFO.factory.directionsUrl}
                   target="_blank"
@@ -142,11 +148,11 @@ export const ContactFooter: React.FC = () => {
                   className="btn btn-outline-forest btn-sm"
                   style={{ width: '100%', fontSize: '0.75rem', padding: '6px 10px' }}
                 >
-                  <span>Get Factory Directions (Bhandarli, Thane)</span>
+                  <span>Get Factory Directions</span>
                   <ExternalLink size={12} aria-hidden="true" />
                 </a>
-                <div style={{ fontSize: '0.6875rem', color: 'var(--color-sage)', marginTop: '6px' }}>
-                  *Factory directions point to Bhandarli, Thane industrial area.
+                <div className="contact-card-sub-micro" style={{ marginTop: '2px' }}>
+                  *Bhandarli, Thane industrial area
                 </div>
               </div>
             </motion.div>
@@ -160,7 +166,7 @@ export const ContactFooter: React.FC = () => {
           <div className="footer-main-grid">
             {/* Column 1: Brand & Identity */}
             <div>
-              <Logo variant="light" size="md" />
+              <Logo variant="light" size="lg" />
               <p style={{ marginTop: '16px', fontSize: '0.875rem', lineHeight: '1.6', color: 'var(--color-sage-light)' }}>
                 Tanker manufacturing, body building, and heavy fabrication solutions built for Indian highways and oil-industry transport standards.
               </p>
