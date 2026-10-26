@@ -78,7 +78,7 @@ export const Header: React.FC = () => {
       {mobileMenuOpen && (
         <div className="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
           <div className="mobile-nav-header">
-            <Logo variant="light" size="sm" />
+            <Logo variant="light" size="md" />
             <button
               onClick={() => setMobileMenuOpen(false)}
               className="mobile-menu-btn"
