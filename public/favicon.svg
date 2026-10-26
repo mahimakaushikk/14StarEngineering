@@ -1,0 +1,6 @@
+<svg width="64" height="64" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="48" fill="#243A32" stroke="#B77A40" stroke-width="4"/>
+  <path d="M50 16L59.5 35L80.5 38L65.5 53L69 74L50 64L31 74L34.5 53L19.5 38L40.5 35L50 16Z" fill="#B77A40" opacity="0.3"/>
+  <path d="M50 16L59.5 35L80.5 38L65.5 53L69 74L50 64L31 74L34.5 53L19.5 38L40.5 35L50 16Z" stroke="#B77A40" stroke-width="4" stroke-linejoin="round"/>
+  <text x="50" y="58" text-anchor="middle" fill="#E9E1D2" font-family="system-ui, sans-serif" font-weight="900" font-size="32">14</text>
+</svg>
