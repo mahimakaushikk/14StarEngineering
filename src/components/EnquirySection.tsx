@@ -181,60 +181,62 @@ export const EnquirySection: React.FC<EnquirySectionProps> = ({
             viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.6 }}
           >
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
-              <h3>Direct Engineering Consultation</h3>
-              <span className="tech-tag" style={{ color: 'var(--color-sandstone)' }}>B.E. MECHANICAL</span>
+            <div className="enquiry-info-content">
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
+                <h3>Direct Engineering Consultation</h3>
+                <span className="tech-tag" style={{ color: 'var(--color-sandstone)' }}>B.E. MECHANICAL</span>
+              </div>
+
+              <p>
+                Connect directly with our mechanical engineering team to evaluate vehicle chassis specifications, tanker capacity requirements, and fabrication timelines.
+              </p>
+
+              <div className="enquiry-contact-links">
+                <a
+                  href={`tel:${BUSINESS_INFO.contact.phone1Raw}`}
+                  className="enquiry-contact-item"
+                  aria-label={`Call primary phone ${BUSINESS_INFO.contact.phone1}`}
+                >
+                  <div className="enquiry-contact-icon">
+                    <Phone size={18} aria-hidden="true" />
+                  </div>
+                  <div>
+                    <div style={{ fontSize: '0.75rem', color: 'var(--color-sage-light)' }}>Primary Call</div>
+                    <div>{BUSINESS_INFO.contact.phone1}</div>
+                  </div>
+                </a>
+
+                <a
+                  href={`tel:${BUSINESS_INFO.contact.phone2Raw}`}
+                  className="enquiry-contact-item"
+                  aria-label={`Call secondary phone ${BUSINESS_INFO.contact.phone2}`}
+                >
+                  <div className="enquiry-contact-icon">
+                    <Phone size={18} aria-hidden="true" />
+                  </div>
+                  <div>
+                    <div style={{ fontSize: '0.75rem', color: 'var(--color-sage-light)' }}>Secondary Call</div>
+                    <div>{BUSINESS_INFO.contact.phone2}</div>
+                  </div>
+                </a>
+
+                <a
+                  href={`mailto:${BUSINESS_INFO.contact.email}`}
+                  className="enquiry-contact-item"
+                  aria-label={`Email ${BUSINESS_INFO.contact.email}`}
+                >
+                  <div className="enquiry-contact-icon">
+                    <Mail size={18} aria-hidden="true" />
+                  </div>
+                  <div>
+                    <div style={{ fontSize: '0.75rem', color: 'var(--color-sage-light)' }}>Email</div>
+                    <div style={{ wordBreak: 'break-all' }}>{BUSINESS_INFO.contact.email}</div>
+                  </div>
+                </a>
+              </div>
             </div>
 
-            <p>
-              Connect directly with our mechanical engineering team to evaluate vehicle chassis specifications, tanker capacity requirements, and fabrication timelines.
-            </p>
-
-            <div className="enquiry-contact-links">
-              <a
-                href={`tel:${BUSINESS_INFO.contact.phone1Raw}`}
-                className="enquiry-contact-item"
-                aria-label={`Call primary phone ${BUSINESS_INFO.contact.phone1}`}
-              >
-                <div className="enquiry-contact-icon">
-                  <Phone size={18} aria-hidden="true" />
-                </div>
-                <div>
-                  <div style={{ fontSize: '0.75rem', color: 'var(--color-sage-light)' }}>Primary Call</div>
-                  <div>{BUSINESS_INFO.contact.phone1}</div>
-                </div>
-              </a>
-
-              <a
-                href={`tel:${BUSINESS_INFO.contact.phone2Raw}`}
-                className="enquiry-contact-item"
-                aria-label={`Call secondary phone ${BUSINESS_INFO.contact.phone2}`}
-              >
-                <div className="enquiry-contact-icon">
-                  <Phone size={18} aria-hidden="true" />
-                </div>
-                <div>
-                  <div style={{ fontSize: '0.75rem', color: 'var(--color-sage-light)' }}>Secondary Call</div>
-                  <div>{BUSINESS_INFO.contact.phone2}</div>
-                </div>
-              </a>
-
-              <a
-                href={`mailto:${BUSINESS_INFO.contact.email}`}
-                className="enquiry-contact-item"
-                aria-label={`Email ${BUSINESS_INFO.contact.email}`}
-              >
-                <div className="enquiry-contact-icon">
-                  <Mail size={18} aria-hidden="true" />
-                </div>
-                <div>
-                  <div style={{ fontSize: '0.75rem', color: 'var(--color-sage-light)' }}>Email</div>
-                  <div style={{ wordBreak: 'break-all' }}>{BUSINESS_INFO.contact.email}</div>
-                </div>
-              </a>
-            </div>
-
-            <div style={{ borderTop: '1px solid rgba(233, 225, 210, 0.15)', paddingTop: '20px' }}>
+            <div className="enquiry-whatsapp-block">
               <div style={{ fontSize: '0.8125rem', color: '#CBD5CF', marginBottom: '12px' }}>
                 Instant connection: opens a prefilled quotation message on WhatsApp.
               </div>
